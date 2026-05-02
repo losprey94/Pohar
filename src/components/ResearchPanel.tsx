@@ -1,0 +1,1 @@
+export default function ResearchPanel({ open, onClose, items }: any) { if (!open) return null; return <div className="overlay"><h3>Research</h3>{items.map((i:any)=><button key={i.id} onClick={i.onBuy} disabled={i.done||!i.can}>{i.name} - {i.desc} ({i.cost} spores)</button>)}<button onClick={onClose}>Close</button></div>; }

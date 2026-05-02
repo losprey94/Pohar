@@ -1,0 +1,1 @@
+export default function CollectionPanel({ open, onClose, rows, discovered }: any) { if (!open) return null; return <div className="overlay"><h3>Collection</h3>{rows.map((r:any)=><div key={r.key}>{discovered.includes(r.key)?`${r.key} · ${r.rarity}`:'???? · Locked'}</div>)}<button onClick={onClose}>Close</button></div>; }

@@ -1,0 +1,1 @@
+export default function OfflineProgressPopup({ gains,onClaim }: any){ if(!gains)return null; return <div className="overlay"><h3>While you were away</h3><p>💧+{Math.floor(gains.water)} ✨+{Math.floor(gains.light)} 🌿+{Math.floor(gains.life)} 🫧+{Math.floor(gains.spores)}</p><button onClick={onClaim}>Claim</button><button>Double Offline Rewards (Soon)</button></div>; }
